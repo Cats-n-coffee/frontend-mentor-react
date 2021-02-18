@@ -8,6 +8,7 @@ const ItemResult = ({ data, addedFilters }) => {
                 return (
                     <div className="job" key={ job.id }>
                         <img className="logo" src={ job.logo } alt="company logo"/>
+                        <div className="info-wrapper">
                         <div className="job-info">
                             <div className="company">
                                 <span className="company-title">{ job.company }</span>
@@ -55,6 +56,8 @@ const ItemResult = ({ data, addedFilters }) => {
                             })     
                             }
                         </div>
+                        </div>
+                        
                     </div>
                 )
             }) }

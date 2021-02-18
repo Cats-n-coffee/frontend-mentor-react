@@ -7,6 +7,10 @@ function App() {
     <div className="App">
       <div className="green-header"></div>
       <Results />
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>. 
+        Coded by Cats-n-coffee.
+      </div>
     </div>
   );
 }
