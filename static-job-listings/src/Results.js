@@ -53,6 +53,7 @@ const Results = () => {
         const newArray = filtersArray.filter(item => item !== filterValue)
         setFilters(newArray);
 
+        console.log(filterValue)
         const originalArray = [...data];
         sortResults(newArray, originalArray);
     }
@@ -89,7 +90,7 @@ const Results = () => {
     }
 
     return ( 
-        <div className="result-list">
+        <div className="results">
             { (filters.length > 0) 
                 && <Search 
                 filters={ filters } 

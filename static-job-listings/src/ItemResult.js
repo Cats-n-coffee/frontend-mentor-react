@@ -3,21 +3,23 @@
 const ItemResult = ({ data, addedFilters }) => {
 
     return ( 
-        <div className="item">
+        <div className="results-item">
             { data.map((job) => {
                 return (
                     <div className="job" key={ job.id }>
-                        <img src={ job.logo } alt="company logo"/>
-                        <div className="company">
-                            <span className="company-title">{ job.company }</span>
-                            { job.new && <span className="company-new">new</span> }
-                            { job.featured && <span className="company-featured">featured</span> }
-                        </div>
-                        <h3>{ job.position }</h3>
-                        <div className="additional-info">
-                            <span>{ job.postedAt }</span>
-                            <span>{ job.contract }</span>
-                            <span>{ job.location }</span>
+                        <img className="logo" src={ job.logo } alt="company logo"/>
+                        <div className="job-info">
+                            <div className="company">
+                                <span className="company-title">{ job.company }</span>
+                                { job.new && <span className="company-new flags">new!</span> }
+                                { job.featured && <span className="company-featured flags">featured</span> }
+                            </div>
+                            <h3 className="position">{ job.position }</h3>
+                            <div className="additional-info">
+                                <span>{ job.postedAt }</span>
+                                <span>{ job.contract }</span>
+                                <span>{ job.location }</span>
+                            </div>
                         </div>
                         <div className="filters">
                             <button className="button-filter" 
