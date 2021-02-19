@@ -27,6 +27,10 @@
         margin: -7em 0 0 0;
     }
 
+    .job:first-child {
+        margin: 5em 0 0 0;
+    }
+
     .job:not(:first-child) {
         margin: 5em 0 0 0;
     }

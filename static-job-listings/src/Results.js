@@ -53,35 +53,55 @@ const Results = () => {
         const newArray = filtersArray.filter(item => item !== filterValue)
         setFilters(newArray);
 
-        console.log(filterValue)
         const originalArray = [...data];
+        setJobs(originalArray);
         sortResults(newArray, originalArray);
     }
 
     const sortResults = (filtersArray, jobsArray) => {
-        
-        const newResults = jobsArray.filter(job => {
-            if (filtersArray.length === 0) {
-                return job
+        const newJobs = [];
+        for (let i = 0; i < jobsArray.length; i++) {
+            const job = jobsArray[i];
+            var isFiltered = filterJob(job, filtersArray)
+            if (isFiltered) {
+                newJobs.push(job)
             }
+        }
+        setJobs(newJobs);
+    }
 
-            for (let i = 0; i < filtersArray.length; i++) {
-                var filter = filtersArray[i];
-                if (job.level === filter) {
-                    return job.level === filter
+    const filterJob = (job, filters) => {
+        let filterHits = 0;
+        for (let i = 0; i < filters.length; i++) {
+            const filter = filters[i];
+            filterHits += searchJobs(job, filter);
+        }
+        if (filterHits === filters.length) {
+            return true
+        }
+        else {
+            return false
+        }
+    }
+
+    const searchJobs = (job, filter) => {
+        var hits = 0;
+        for (const key in job) {
+            let value = job[key];
+            if (Array.isArray(value)) {
+                for (const item of value) {
+                    if (item === filter) {
+                        hits += 1
+                    }
                 }
-                if (job.role === filter) {
-                    return job.role === filter
+            }
+            else {
+                if (value === filter) {
+                    hits += 1
                 }
-                if (job.languages.includes(filter)) {
-                    return job.languages.includes(filter)
-                }
-                if (job.tools.includes(filter)) {
-                    return job.tools.includes(filter)
-                }
-            }             
-        })
-        setJobs(newResults);
+            }
+        }
+        return hits;
     }
 
     const clearAllFilters = () => {
@@ -105,29 +125,3 @@ const Results = () => {
 }
  
 export default Results;
-
-// sortresults
-// var jobsArray = [...jobs];
-        // 
-
-
-
-// removefiltered items
-// const jobsArray = [...data];
-        // const newResults = jobsArray.filter(job => {
-        //     for (let i = 0; i < filtersArray.length; i++) {
-        //         if (!Object.values(job).includes(filtersArray[i])) {
-        //             return job
-        //         }
-        //     }
-            
-        // })
-        // setJobs(newResults)
-
-
-// filter short version
-// for (let i = 0; i < filtersArray.length; i++) {
-//     if (Object.values(job).includes(filtersArray[i])) {
-//         return job
-//     }
-// }
