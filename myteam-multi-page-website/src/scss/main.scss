@@ -20,6 +20,7 @@ $mobile-wrapper: rgba(0,37,41,0.5);
 // Padding left/right for each screen size
 $padding-mobile: 2em;
 $padding-tablet: 8em;
+$padding-desktop: 13.5em;
 
 // --------------------------------- General styles ---------------------------------
 *, *:before, *:after {
@@ -81,5 +82,7 @@ li {
 @import 'home-section-3';
 
 // Media queries
-@import 'media-768';
-@import 'media-1440';
+@import 'media-768-home';
+@import 'media-768-shared';
+@import 'media-1350-home';
+@import 'media-1350-shared';

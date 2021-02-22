@@ -22,17 +22,19 @@ const Header = () => {
     
     return (
         <header>
-            <img className="logo" src={logo} alt="my team logo" width="160" height="40"/>
-            <img onClick={closeMobileMenu} className="mobile-menu" src={mobileMenu} alt="mobile menu" data-action="mobile-menu"/>
-            <div className="mobile-nav-blur"></div>
-            <nav className="navbar">
-                <img onClick={closeMobileMenu} className="close-menu" src={closeMenu} alt="close mobile menu"/>
-                <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#" className="btn btn-primary-light">contact us</a></li>
-                </ul>
-            </nav>
+            <div className="header-wrapper">
+                <img className="logo" src={logo} alt="my team logo" width="160" height="40"/>
+                <img onClick={closeMobileMenu} className="mobile-menu" src={mobileMenu} alt="mobile menu" data-action="mobile-menu"/>
+                <div className="mobile-nav-blur"></div>
+                <nav className="navbar">
+                    <img onClick={closeMobileMenu} className="close-menu" src={closeMenu} alt="close mobile menu"/>
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#" className="btn btn-primary-light">contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
     )
 }

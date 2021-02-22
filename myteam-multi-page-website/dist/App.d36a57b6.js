@@ -29844,7 +29844,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../images/bg-pattern-about-1-mobile-nav-1.svg":[["bg-pattern-about-1-mobile-nav-1.fbd23b7d.svg","images/bg-pattern-about-1-mobile-nav-1.svg"],"images/bg-pattern-about-1-mobile-nav-1.svg"],"./../images/bg-pattern-home-6-about-5.svg":[["bg-pattern-home-6-about-5.4dcd4453.svg","images/bg-pattern-home-6-about-5.svg"],"images/bg-pattern-home-6-about-5.svg"],"./../images/bg-pattern-home-2.svg":[["bg-pattern-home-2.a2898b1a.svg","images/bg-pattern-home-2.svg"],"images/bg-pattern-home-2.svg"],"./../images/bg-pattern-home-3.svg":[["bg-pattern-home-3.aac575a5.svg","images/bg-pattern-home-3.svg"],"images/bg-pattern-home-3.svg"],"./../images/icon-quotes.svg":[["icon-quotes.7bba01ec.svg","images/icon-quotes.svg"],"images/icon-quotes.svg"],"./../images/bg-pattern-home-4-about-3.svg":[["bg-pattern-home-4-about-3.4da36feb.svg","images/bg-pattern-home-4-about-3.svg"],"images/bg-pattern-home-4-about-3.svg"],"./../images/bg-pattern-home-5.svg":[["bg-pattern-home-5.016fe3e0.svg","images/bg-pattern-home-5.svg"],"images/bg-pattern-home-5.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/Banner.js":[function(require,module,exports) {
+},{"./../images/bg-pattern-about-1-mobile-nav-1.svg":[["bg-pattern-about-1-mobile-nav-1.fbd23b7d.svg","images/bg-pattern-about-1-mobile-nav-1.svg"],"images/bg-pattern-about-1-mobile-nav-1.svg"],"./../images/bg-pattern-home-6-about-5.svg":[["bg-pattern-home-6-about-5.4dcd4453.svg","images/bg-pattern-home-6-about-5.svg"],"images/bg-pattern-home-6-about-5.svg"],"./../images/bg-pattern-home-2.svg":[["bg-pattern-home-2.a2898b1a.svg","images/bg-pattern-home-2.svg"],"images/bg-pattern-home-2.svg"],"./../images/bg-pattern-home-3.svg":[["bg-pattern-home-3.aac575a5.svg","images/bg-pattern-home-3.svg"],"images/bg-pattern-home-3.svg"],"./../images/icon-quotes.svg":[["icon-quotes.7bba01ec.svg","images/icon-quotes.svg"],"images/icon-quotes.svg"],"./../images/bg-pattern-home-4-about-3.svg":[["bg-pattern-home-4-about-3.4da36feb.svg","images/bg-pattern-home-4-about-3.svg"],"images/bg-pattern-home-4-about-3.svg"],"./../images/bg-pattern-home-5.svg":[["bg-pattern-home-5.016fe3e0.svg","images/bg-pattern-home-5.svg"],"images/bg-pattern-home-5.svg"],"./../images/bg-pattern-home-1.svg":[["bg-pattern-home-1.cf6a239b.svg","images/bg-pattern-home-1.svg"],"images/bg-pattern-home-1.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/Banner.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29859,10 +29859,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Banner = function Banner() {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "banner"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "banner-wrapper"
   }, /*#__PURE__*/_react.default.createElement("h2", null, "Ready to get started?"), /*#__PURE__*/_react.default.createElement("a", {
     href: "#",
     className: "btn btn-primary-light"
-  }, "contact us"));
+  }, "contact us")));
 };
 
 var _default = Banner;
@@ -29910,8 +29912,12 @@ var HomePage = function HomePage() {
     className: "home-page"
   }, /*#__PURE__*/_react.default.createElement("section", {
     className: "home-section-1"
-  }, /*#__PURE__*/_react.default.createElement("h1", null, "Find the ", /*#__PURE__*/_react.default.createElement("br", null), "best ", /*#__PURE__*/_react.default.createElement("span", null, "talent")), /*#__PURE__*/_react.default.createElement("p", null, "Finding the right people and building high performing teams can be hard. Most companies aren\u2019t tapping into the abundance of global talent. We\u2019re about to change that.")), /*#__PURE__*/_react.default.createElement("section", {
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "section-1-wrapper"
+  }, /*#__PURE__*/_react.default.createElement("h1", null, "Find the ", /*#__PURE__*/_react.default.createElement("br", null), "best ", /*#__PURE__*/_react.default.createElement("span", null, "talent")), /*#__PURE__*/_react.default.createElement("p", null, "Finding the right people and building high performing teams can be hard. Most companies aren\u2019t tapping into the abundance of global talent. We\u2019re about to change that."))), /*#__PURE__*/_react.default.createElement("section", {
     className: "home-section-2"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "section-2-wrapper"
   }, /*#__PURE__*/_react.default.createElement("h2", null, "Build & manage distributed teams like no one else."), /*#__PURE__*/_react.default.createElement("div", {
     className: "presentation"
   }, /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("img", {
@@ -29923,8 +29929,10 @@ var HomePage = function HomePage() {
   }), /*#__PURE__*/_react.default.createElement("h3", null, "Easy to Implement"), /*#__PURE__*/_react.default.createElement("p", null, "Our processes have been refined over years of implementation meaning our teams always deliver.")), /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("img", {
     src: _iconChart.default,
     alt: "chart"
-  }), /*#__PURE__*/_react.default.createElement("h3", null, "Enhanced Productivity"), /*#__PURE__*/_react.default.createElement("p", null, "Our customized platform with in-built analytics helps you manage your distributed teams.")))), /*#__PURE__*/_react.default.createElement("section", {
+  }), /*#__PURE__*/_react.default.createElement("h3", null, "Enhanced Productivity"), /*#__PURE__*/_react.default.createElement("p", null, "Our customized platform with in-built analytics helps you manage your distributed teams."))))), /*#__PURE__*/_react.default.createElement("section", {
     className: "home-section-3"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "section-3-wrapper"
   }, /*#__PURE__*/_react.default.createElement("h2", null, "Delivering real results for top companies. Some of our ", /*#__PURE__*/_react.default.createElement("span", null, "success stories.")), /*#__PURE__*/_react.default.createElement("div", {
     className: "testimonials"
   }, /*#__PURE__*/_react.default.createElement("figure", null, /*#__PURE__*/_react.default.createElement("blockquote", null, "\u201CThe team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.\u201D"), /*#__PURE__*/_react.default.createElement("figcaption", null, /*#__PURE__*/_react.default.createElement("cite", null, "Kady Baker"), /*#__PURE__*/_react.default.createElement("cite", null, "Product Manager at Bookmark"), /*#__PURE__*/_react.default.createElement("img", {
@@ -29936,7 +29944,7 @@ var HomePage = function HomePage() {
   }))), /*#__PURE__*/_react.default.createElement("figure", null, /*#__PURE__*/_react.default.createElement("blockquote", null, "\u201CAmazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month.\u201D"), /*#__PURE__*/_react.default.createElement("figcaption", null, /*#__PURE__*/_react.default.createElement("cite", null, "Arthur Clarke"), /*#__PURE__*/_react.default.createElement("cite", null, "Co-founder of MyPhysio"), /*#__PURE__*/_react.default.createElement("img", {
     src: _avatarArthur.default,
     alt: "Arthur's picture"
-  }))))), /*#__PURE__*/_react.default.createElement(_Banner.default, null));
+  })))))), /*#__PURE__*/_react.default.createElement(_Banner.default, null));
 };
 
 var _default = HomePage;
@@ -30000,7 +30008,9 @@ var Header = function Header() {
     navBar.classList.toggle('show');
   };
 
-  return /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("img", {
+  return /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "header-wrapper"
+  }, /*#__PURE__*/_react.default.createElement("img", {
     className: "logo",
     src: _logo.default,
     alt: "my team logo",
@@ -30028,7 +30038,7 @@ var Header = function Header() {
   }, "about")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
     href: "#",
     className: "btn btn-primary-light"
-  }, "contact us")))));
+  }, "contact us"))))));
 };
 
 var _default = Header;
@@ -30048,7 +30058,9 @@ var _logo = _interopRequireDefault(require("../images/logo.svg"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Footer = function Footer() {
-  return /*#__PURE__*/_react.default.createElement("footer", null, /*#__PURE__*/_react.default.createElement("img", {
+  return /*#__PURE__*/_react.default.createElement("footer", null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "footer-wrapper"
+  }, /*#__PURE__*/_react.default.createElement("img", {
     src: _logo.default,
     alt: ""
   }), /*#__PURE__*/_react.default.createElement("nav", null, /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
@@ -30088,7 +30100,7 @@ var Footer = function Footer() {
     target: "_blank"
   }, "Frontend Mentor"), ". Coded by ", /*#__PURE__*/_react.default.createElement("a", {
     href: "#"
-  }, "Cats-n-coffee"), "."));
+  }, "Cats-n-coffee"), ".")));
 };
 
 var _default = Footer;
@@ -30145,7 +30157,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49331" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49346" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
