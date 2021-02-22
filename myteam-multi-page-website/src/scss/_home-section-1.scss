@@ -1,0 +1,40 @@
+.home-section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 80px);
+    padding: 8em $padding-mobile 0 $padding-mobile;
+    background: $midnight-green;
+    position: relative;
+
+    h1 {
+        font-size: 3.3rem;
+        font-weight: 700;
+        text-align: center;
+        color: $white;
+
+        span {
+            color: $light-coral;
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+        font-weight: 600;
+        line-height: 2.2em;
+        text-align: center;
+        color: $white;
+        padding: 1.1em 0 0 0;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        background-image: url("../images/bg-pattern-home-2.svg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        width: 358px;
+        height: 200px;
+    }
+}

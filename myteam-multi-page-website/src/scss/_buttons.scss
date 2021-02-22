@@ -1,0 +1,26 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+    height: 48px;
+    border-radius: 24px;
+}
+
+.btn-primary-light {
+    border: 2px solid $white;
+    color: white;
+
+    &:hover, &:focus {
+        background: $white;
+        outline: none;
+    }
+}
+
+.btn-primary-dark {
+
+}
+
+.btn-secondary {
+
+}
