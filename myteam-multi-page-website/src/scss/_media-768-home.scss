@@ -2,25 +2,25 @@
      
     .home-section-1 {
         height: calc(100vh - 108px);
+    }
 
-        .section-1-wrapper {
-            align-items: center;
+    .section-1-wrapper {
+        align-items: center;
 
-            h1 {
-                font-size: 5.3rem;
-                line-height: 1em;
-            }
-    
-            p {
-                max-width: 460px;
-            }
+        h1 {
+            font-size: 5.3rem;
+            line-height: 1em;
+        }
+
+        p {
+            max-width: 460px;
         }
     }
 
     .home-section-2 {
         padding: 9em $padding-tablet 5.4em $padding-tablet;
 
-        .section-2-wrapper {
+        .home-section-2-wrapper {
             h2 {
                 width: 90%;
                 max-width: 450px;
@@ -60,7 +60,7 @@
     .home-section-3 {
         padding: 8em $padding-tablet 8em $padding-tablet;
 
-        .section-3-wrapper {
+        .home-section-3-wrapper {
             h2 {
                 padding: 0 1em;
             }

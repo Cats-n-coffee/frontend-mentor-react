@@ -4,7 +4,7 @@
     padding: 11.5em $padding-mobile 13em $padding-mobile;
     position: relative;
 
-    .section-3-wrapper {
+    .home-section-3-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -76,7 +76,7 @@
                         width: 62px;
                         height: 62px;
                         border-radius: 50%;  
-                        border: 2px solid $white; 
+                        border: 2px solid $image-border; 
                     }
                 }
     

@@ -29844,7 +29844,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../images/bg-pattern-about-1-mobile-nav-1.svg":[["bg-pattern-about-1-mobile-nav-1.fbd23b7d.svg","images/bg-pattern-about-1-mobile-nav-1.svg"],"images/bg-pattern-about-1-mobile-nav-1.svg"],"./../images/bg-pattern-home-6-about-5.svg":[["bg-pattern-home-6-about-5.4dcd4453.svg","images/bg-pattern-home-6-about-5.svg"],"images/bg-pattern-home-6-about-5.svg"],"./../images/bg-pattern-home-2.svg":[["bg-pattern-home-2.a2898b1a.svg","images/bg-pattern-home-2.svg"],"images/bg-pattern-home-2.svg"],"./../images/bg-pattern-home-3.svg":[["bg-pattern-home-3.aac575a5.svg","images/bg-pattern-home-3.svg"],"images/bg-pattern-home-3.svg"],"./../images/icon-quotes.svg":[["icon-quotes.7bba01ec.svg","images/icon-quotes.svg"],"images/icon-quotes.svg"],"./../images/bg-pattern-home-4-about-3.svg":[["bg-pattern-home-4-about-3.4da36feb.svg","images/bg-pattern-home-4-about-3.svg"],"images/bg-pattern-home-4-about-3.svg"],"./../images/bg-pattern-home-5.svg":[["bg-pattern-home-5.016fe3e0.svg","images/bg-pattern-home-5.svg"],"images/bg-pattern-home-5.svg"],"./../images/bg-pattern-home-1.svg":[["bg-pattern-home-1.cf6a239b.svg","images/bg-pattern-home-1.svg"],"images/bg-pattern-home-1.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/Banner.js":[function(require,module,exports) {
+},{"./../images/bg-pattern-about-1-mobile-nav-1.svg":[["bg-pattern-about-1-mobile-nav-1.fbd23b7d.svg","images/bg-pattern-about-1-mobile-nav-1.svg"],"images/bg-pattern-about-1-mobile-nav-1.svg"],"./../images/bg-pattern-home-6-about-5.svg":[["bg-pattern-home-6-about-5.4dcd4453.svg","images/bg-pattern-home-6-about-5.svg"],"images/bg-pattern-home-6-about-5.svg"],"./../images/bg-pattern-home-2.svg":[["bg-pattern-home-2.a2898b1a.svg","images/bg-pattern-home-2.svg"],"images/bg-pattern-home-2.svg"],"./../images/bg-pattern-home-3.svg":[["bg-pattern-home-3.aac575a5.svg","images/bg-pattern-home-3.svg"],"images/bg-pattern-home-3.svg"],"./../images/icon-quotes.svg":[["icon-quotes.7bba01ec.svg","images/icon-quotes.svg"],"images/icon-quotes.svg"],"./../images/bg-pattern-home-4-about-3.svg":[["bg-pattern-home-4-about-3.4da36feb.svg","images/bg-pattern-home-4-about-3.svg"],"images/bg-pattern-home-4-about-3.svg"],"./../images/bg-pattern-home-5.svg":[["bg-pattern-home-5.016fe3e0.svg","images/bg-pattern-home-5.svg"],"images/bg-pattern-home-5.svg"],"./../images/bg-pattern-about-2-contact-1.svg":[["bg-pattern-about-2-contact-1.25ee7e1f.svg","images/bg-pattern-about-2-contact-1.svg"],"images/bg-pattern-about-2-contact-1.svg"],"./../images/bg-pattern-about-4.svg":[["bg-pattern-about-4.c3123b2e.svg","images/bg-pattern-about-4.svg"],"images/bg-pattern-about-4.svg"],"./../images/bg-pattern-home-1.svg":[["bg-pattern-home-1.cf6a239b.svg","images/bg-pattern-home-1.svg"],"images/bg-pattern-home-1.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/Banner.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29917,7 +29917,7 @@ var HomePage = function HomePage() {
   }, /*#__PURE__*/_react.default.createElement("h1", null, "Find the ", /*#__PURE__*/_react.default.createElement("br", null), "best ", /*#__PURE__*/_react.default.createElement("span", null, "talent")), /*#__PURE__*/_react.default.createElement("p", null, "Finding the right people and building high performing teams can be hard. Most companies aren\u2019t tapping into the abundance of global talent. We\u2019re about to change that."))), /*#__PURE__*/_react.default.createElement("section", {
     className: "home-section-2"
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "section-2-wrapper"
+    className: "home-section-2-wrapper"
   }, /*#__PURE__*/_react.default.createElement("h2", null, "Build & manage distributed teams like no one else."), /*#__PURE__*/_react.default.createElement("div", {
     className: "presentation"
   }, /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("img", {
@@ -29932,7 +29932,7 @@ var HomePage = function HomePage() {
   }), /*#__PURE__*/_react.default.createElement("h3", null, "Enhanced Productivity"), /*#__PURE__*/_react.default.createElement("p", null, "Our customized platform with in-built analytics helps you manage your distributed teams."))))), /*#__PURE__*/_react.default.createElement("section", {
     className: "home-section-3"
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "section-3-wrapper"
+    className: "home-section-3-wrapper"
   }, /*#__PURE__*/_react.default.createElement("h2", null, "Delivering real results for top companies. Some of our ", /*#__PURE__*/_react.default.createElement("span", null, "success stories.")), /*#__PURE__*/_react.default.createElement("div", {
     className: "testimonials"
   }, /*#__PURE__*/_react.default.createElement("figure", null, /*#__PURE__*/_react.default.createElement("blockquote", null, "\u201CThe team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.\u201D"), /*#__PURE__*/_react.default.createElement("figcaption", null, /*#__PURE__*/_react.default.createElement("cite", null, "Kady Baker"), /*#__PURE__*/_react.default.createElement("cite", null, "Product Manager at Bookmark"), /*#__PURE__*/_react.default.createElement("img", {
@@ -30105,7 +30105,223 @@ var Footer = function Footer() {
 
 var _default = Footer;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../images/logo.svg":"images/logo.svg"}],"App.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../images/logo.svg":"images/logo.svg"}],"images/avatar-nikita.jpg":[function(require,module,exports) {
+module.exports = "/avatar-nikita.330d1d8a.jpg";
+},{}],"images/avatar-christian.jpg":[function(require,module,exports) {
+module.exports = "/avatar-christian.994ee000.jpg";
+},{}],"images/avatar-cruz.jpg":[function(require,module,exports) {
+module.exports = "/avatar-cruz.898ddf04.jpg";
+},{}],"images/avatar-drake.jpg":[function(require,module,exports) {
+module.exports = "/avatar-drake.d5982079.jpg";
+},{}],"images/avatar-griffin.jpg":[function(require,module,exports) {
+module.exports = "/avatar-griffin.b918e8d6.jpg";
+},{}],"images/avatar-aden.jpg":[function(require,module,exports) {
+module.exports = "/avatar-aden.b753c006.jpg";
+},{}],"teamData.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var team = [{
+  name: "Nikita Marks",
+  title: "Founder & CEO",
+  image: require("./images/avatar-nikita.jpg"),
+  quote: "“It always amazes me how much talent there is in every corner of the globe.”"
+}, {
+  name: "Cristian Duncan",
+  title: "Co-founder & COO",
+  image: require("./images/avatar-christian.jpg"),
+  quote: "“Distributed teams required unique processes. You need to approach work in a new way.”"
+}, {
+  name: "Cruz Hamer",
+  title: "Co-founder & CTO",
+  image: require("./images/avatar-cruz.jpg"),
+  quote: "“Technology is at the forefront of enabling distributed teams. That's where we come in.”"
+}, {
+  name: "Drake Heaton",
+  title: "Business Development Lead",
+  image: require("./images/avatar-drake.jpg"),
+  quote: "“Hiring similar people from similar backgrounds is a surefire way to stunt innovation.”"
+}, {
+  name: "Griffin Wise",
+  title: "Lead Marketing",
+  image: require("./images/avatar-griffin.jpg"),
+  quote: "“Unique perspectives shape unique products, which is what you need to survive these days.”"
+}, {
+  name: "Aden Allan",
+  title: "Head of Talent",
+  image: require("./images/avatar-aden.jpg"),
+  quote: "“Empowered teams create truly amazing products. Set the north star and let them follow it.”"
+}];
+var _default = team;
+exports.default = _default;
+},{"./images/avatar-nikita.jpg":"images/avatar-nikita.jpg","./images/avatar-christian.jpg":"images/avatar-christian.jpg","./images/avatar-cruz.jpg":"images/avatar-cruz.jpg","./images/avatar-drake.jpg":"images/avatar-drake.jpg","./images/avatar-griffin.jpg":"images/avatar-griffin.jpg","./images/avatar-aden.jpg":"images/avatar-aden.jpg"}],"components/TeamMembers.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _teamData = _interopRequireDefault(require("../teamData"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+var TeamMembers = function TeamMembers() {
+  var _useState = (0, _react.useState)(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      isFlipped = _useState2[0],
+      setIsFlipped = _useState2[1];
+
+  var flipCard = function flipCard() {
+    setIsFlipped(!isFlipped);
+  };
+
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "team-members"
+  }, _teamData.default.map(function (member, index) {
+    return /*#__PURE__*/_react.default.createElement("article", {
+      className: "card",
+      key: index
+    }, /*#__PURE__*/_react.default.createElement("div", {
+      className: "card-front ".concat(isFlipped ? "front" : "")
+    }, /*#__PURE__*/_react.default.createElement("img", {
+      src: member.image,
+      alt: "team member's picture"
+    }), /*#__PURE__*/_react.default.createElement("h3", null, member.name), /*#__PURE__*/_react.default.createElement("span", null, member.title)), /*#__PURE__*/_react.default.createElement("div", {
+      className: "card-back ".concat(isFlipped ? "back" : "")
+    }, /*#__PURE__*/_react.default.createElement("h3", null, member.name), /*#__PURE__*/_react.default.createElement("p", null, member.quote), /*#__PURE__*/_react.default.createElement("div", {
+      className: "card-social"
+    }, /*#__PURE__*/_react.default.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
+      width: "24",
+      height: "20",
+      viewBox: "0 0 24 20"
+    }, /*#__PURE__*/_react.default.createElement("path", {
+      fill: "#FFF",
+      d: "M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
+    })), /*#__PURE__*/_react.default.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
+      width: "20",
+      height: "20",
+      viewBox: "0 0 20 20"
+    }, /*#__PURE__*/_react.default.createElement("path", {
+      fill: "#FFF",
+      d: "M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"
+    })))), /*#__PURE__*/_react.default.createElement("div", {
+      className: "flip-card",
+      onClick: function onClick() {
+        flipCard(member[index]);
+      }
+    }, /*#__PURE__*/_react.default.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
+      width: "16",
+      height: "16",
+      viewBox: "0 0 16 16"
+    }, /*#__PURE__*/_react.default.createElement("path", {
+      fill: "#012F34",
+      fillRule: "evenodd",
+      d: "M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"
+    }))));
+  }));
+};
+
+var _default = TeamMembers;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","../teamData":"teamData.js"}],"images/logo-gadgets-now.png":[function(require,module,exports) {
+module.exports = "/logo-gadgets-now.0c82a92e.png";
+},{}],"images/logo-jakarta-post.png":[function(require,module,exports) {
+module.exports = "/logo-jakarta-post.60fb4cfa.png";
+},{}],"images/logo-tech-radar.png":[function(require,module,exports) {
+module.exports = "/logo-tech-radar.f3ddd231.png";
+},{}],"images/logo-the-guardian.png":[function(require,module,exports) {
+module.exports = "/logo-the-guardian.67f40d0f.png";
+},{}],"images/logo-the-verge.png":[function(require,module,exports) {
+module.exports = "/logo-the-verge.d266a33d.png";
+},{}],"components/AboutPage.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Banner = _interopRequireDefault(require("./Banner"));
+
+var _TeamMembers = _interopRequireDefault(require("./TeamMembers"));
+
+var _logoGadgetsNow = _interopRequireDefault(require("../images/logo-gadgets-now.png"));
+
+var _logoJakartaPost = _interopRequireDefault(require("../images/logo-jakarta-post.png"));
+
+var _logoTechRadar = _interopRequireDefault(require("../images/logo-tech-radar.png"));
+
+var _logoTheGuardian = _interopRequireDefault(require("../images/logo-the-guardian.png"));
+
+var _logoTheVerge = _interopRequireDefault(require("../images/logo-the-verge.png"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var AboutPage = function AboutPage() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "about-page"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "about-section-1"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "section-1-wrapper"
+  }, /*#__PURE__*/_react.default.createElement("h1", null, "About"), /*#__PURE__*/_react.default.createElement("p", null, "We help companies build dynamic teams made up of top global talent. Using our network of passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products and experiences. We\u2019ll bring those teams to you."))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "about-section-2"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "about-section-2-wrapper"
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "Meet the directors"), /*#__PURE__*/_react.default.createElement(_TeamMembers.default, null))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "about-section-3"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "about-section-3-wrapper"
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "Some of our clients"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "clients"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _logoTheVerge.default,
+    alt: "logo the verge"
+  }), /*#__PURE__*/_react.default.createElement("img", {
+    src: _logoJakartaPost.default,
+    alt: "logo the jakarta post"
+  }), /*#__PURE__*/_react.default.createElement("img", {
+    src: _logoTheGuardian.default,
+    alt: "logo the guardian"
+  }), /*#__PURE__*/_react.default.createElement("img", {
+    src: _logoTechRadar.default,
+    alt: "logo tech radar"
+  }), /*#__PURE__*/_react.default.createElement("img", {
+    src: _logoGadgetsNow.default,
+    alt: "logo gadgets now"
+  })))), /*#__PURE__*/_react.default.createElement(_Banner.default, null));
+};
+
+var _default = AboutPage;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","./Banner":"components/Banner.js","./TeamMembers":"components/TeamMembers.js","../images/logo-gadgets-now.png":"images/logo-gadgets-now.png","../images/logo-jakarta-post.png":"images/logo-jakarta-post.png","../images/logo-tech-radar.png":"images/logo-tech-radar.png","../images/logo-the-guardian.png":"images/logo-the-guardian.png","../images/logo-the-verge.png":"images/logo-the-verge.png"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -30120,16 +30336,18 @@ var _Header = _interopRequireDefault(require("./components/Header"));
 
 var _Footer = _interopRequireDefault(require("./components/Footer"));
 
+var _AboutPage = _interopRequireDefault(require("./components/AboutPage"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App() {
   return /*#__PURE__*/_react.default.createElement("div", {
     id: "container"
-  }, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement(_HomePage.default, null), /*#__PURE__*/_react.default.createElement(_Footer.default, null));
+  }, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement(_AboutPage.default, null), /*#__PURE__*/_react.default.createElement(_Footer.default, null));
 };
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(App, null), document.getElementById('root'));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./scss/main.scss":"scss/main.scss","./components/HomePage":"components/HomePage.js","./components/Header":"components/Header.js","./components/Footer":"components/Footer.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./scss/main.scss":"scss/main.scss","./components/HomePage":"components/HomePage.js","./components/Header":"components/Header.js","./components/Footer":"components/Footer.js","./components/AboutPage":"components/AboutPage.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -30157,7 +30375,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49346" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53947" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

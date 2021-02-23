@@ -19,7 +19,7 @@ const HomePage = () => {
                 </div>
             </section>
             <section className="home-section-2">
-                <div className="section-2-wrapper">
+                <div className="home-section-2-wrapper">
                     <h2>Build & manage distributed teams like no one else.</h2>
                     <div className="presentation">
                         <article>
@@ -44,7 +44,7 @@ const HomePage = () => {
                 </div>
             </section>
             <section className="home-section-3">
-                <div className="section-3-wrapper">
+                <div className="home-section-3-wrapper">
                     <h2>Delivering real results for top companies. Some of our <span>success stories.</span></h2>
                     <div className="testimonials">
                         <figure>

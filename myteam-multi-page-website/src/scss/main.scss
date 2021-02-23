@@ -16,6 +16,7 @@ $sacramento-state-green: #012F34;
 $dark-green: #002529;
 
 $mobile-wrapper: rgba(0,37,41,0.5);
+$image-border: #C4FFFE;
 
 // Padding left/right for each screen size
 $padding-mobile: 2em;
@@ -80,6 +81,11 @@ li {
 @import 'home-section-1';
 @import 'home-section-2';
 @import 'home-section-3';
+
+// About page
+@import 'about-section-1';
+@import 'about-section-2';
+@import 'about-section-3';
 
 // Media queries
 @import 'media-768-home';
