@@ -1,0 +1,31 @@
+@use '../variables/' as *;
+
+@media screen and (min-width: 768px) {
+    .contact-page {
+        padding: 9em $padding-tablet;
+
+        .contact-wrapper {
+            .contact-text {
+                h2 {
+                    font-size: 6em;
+                }
+            }
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url("../images/bg-pattern-about-2-contact-1.svg");
+            background-repeat: no-repeat;
+            top: 8em;
+            left: -100px;
+            width: 200px;
+            height: 200px;
+            display: block;
+        }
+
+        &:after {
+            bottom: 0;
+        }
+    }
+}

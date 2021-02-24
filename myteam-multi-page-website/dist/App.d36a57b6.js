@@ -29844,7 +29844,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../images/bg-pattern-about-1-mobile-nav-1.svg":[["bg-pattern-about-1-mobile-nav-1.fbd23b7d.svg","images/bg-pattern-about-1-mobile-nav-1.svg"],"images/bg-pattern-about-1-mobile-nav-1.svg"],"./../images/bg-pattern-home-6-about-5.svg":[["bg-pattern-home-6-about-5.4dcd4453.svg","images/bg-pattern-home-6-about-5.svg"],"images/bg-pattern-home-6-about-5.svg"],"./../images/bg-pattern-home-2.svg":[["bg-pattern-home-2.a2898b1a.svg","images/bg-pattern-home-2.svg"],"images/bg-pattern-home-2.svg"],"./../images/bg-pattern-home-3.svg":[["bg-pattern-home-3.aac575a5.svg","images/bg-pattern-home-3.svg"],"images/bg-pattern-home-3.svg"],"./../images/icon-quotes.svg":[["icon-quotes.7bba01ec.svg","images/icon-quotes.svg"],"images/icon-quotes.svg"],"./../images/bg-pattern-home-4-about-3.svg":[["bg-pattern-home-4-about-3.4da36feb.svg","images/bg-pattern-home-4-about-3.svg"],"images/bg-pattern-home-4-about-3.svg"],"./../images/bg-pattern-home-5.svg":[["bg-pattern-home-5.016fe3e0.svg","images/bg-pattern-home-5.svg"],"images/bg-pattern-home-5.svg"],"./../images/bg-pattern-about-2-contact-1.svg":[["bg-pattern-about-2-contact-1.25ee7e1f.svg","images/bg-pattern-about-2-contact-1.svg"],"images/bg-pattern-about-2-contact-1.svg"],"./../images/bg-pattern-about-4.svg":[["bg-pattern-about-4.c3123b2e.svg","images/bg-pattern-about-4.svg"],"images/bg-pattern-about-4.svg"],"./../images/bg-pattern-home-1.svg":[["bg-pattern-home-1.cf6a239b.svg","images/bg-pattern-home-1.svg"],"images/bg-pattern-home-1.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/Banner.js":[function(require,module,exports) {
+},{"./../images/bg-pattern-about-1-mobile-nav-1.svg":[["bg-pattern-about-1-mobile-nav-1.fbd23b7d.svg","images/bg-pattern-about-1-mobile-nav-1.svg"],"images/bg-pattern-about-1-mobile-nav-1.svg"],"./../images/bg-pattern-home-6-about-5.svg":[["bg-pattern-home-6-about-5.4dcd4453.svg","images/bg-pattern-home-6-about-5.svg"],"images/bg-pattern-home-6-about-5.svg"],"./../images/bg-pattern-home-2.svg":[["bg-pattern-home-2.a2898b1a.svg","images/bg-pattern-home-2.svg"],"images/bg-pattern-home-2.svg"],"./../images/bg-pattern-home-3.svg":[["bg-pattern-home-3.aac575a5.svg","images/bg-pattern-home-3.svg"],"images/bg-pattern-home-3.svg"],"./../images/icon-quotes.svg":[["icon-quotes.7bba01ec.svg","images/icon-quotes.svg"],"images/icon-quotes.svg"],"./../images/bg-pattern-home-4-about-3.svg":[["bg-pattern-home-4-about-3.4da36feb.svg","images/bg-pattern-home-4-about-3.svg"],"images/bg-pattern-home-4-about-3.svg"],"./../images/bg-pattern-home-5.svg":[["bg-pattern-home-5.016fe3e0.svg","images/bg-pattern-home-5.svg"],"images/bg-pattern-home-5.svg"],"./../images/bg-pattern-about-2-contact-1.svg":[["bg-pattern-about-2-contact-1.25ee7e1f.svg","images/bg-pattern-about-2-contact-1.svg"],"images/bg-pattern-about-2-contact-1.svg"],"./../images/bg-pattern-about-4.svg":[["bg-pattern-about-4.c3123b2e.svg","images/bg-pattern-about-4.svg"],"images/bg-pattern-about-4.svg"],"./../images/bg-pattern-contact-2.svg":[["bg-pattern-contact-2.98f62718.svg","images/bg-pattern-contact-2.svg"],"images/bg-pattern-contact-2.svg"],"./../images/bg-pattern-home-1.svg":[["bg-pattern-home-1.cf6a239b.svg","images/bg-pattern-home-1.svg"],"images/bg-pattern-home-1.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/Banner.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30167,10 +30167,6 @@ exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _teamData = _interopRequireDefault(require("../teamData"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
@@ -30187,68 +30183,75 @@ function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-var TeamMembers = function TeamMembers() {
+var TeamMembers = function TeamMembers(_ref) {
+  var member = _ref.member;
+
   var _useState = (0, _react.useState)(false),
       _useState2 = _slicedToArray(_useState, 2),
       isFlipped = _useState2[0],
       setIsFlipped = _useState2[1];
 
-  var flipCard = function flipCard() {
-    setIsFlipped(!isFlipped);
-  };
-
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "team-members"
-  }, _teamData.default.map(function (member, index) {
-    return /*#__PURE__*/_react.default.createElement("article", {
-      className: "card",
-      key: index
-    }, /*#__PURE__*/_react.default.createElement("div", {
-      className: "card-front ".concat(isFlipped ? "front" : "")
-    }, /*#__PURE__*/_react.default.createElement("img", {
-      src: member.image,
-      alt: "team member's picture"
-    }), /*#__PURE__*/_react.default.createElement("h3", null, member.name), /*#__PURE__*/_react.default.createElement("span", null, member.title)), /*#__PURE__*/_react.default.createElement("div", {
-      className: "card-back ".concat(isFlipped ? "back" : "")
-    }, /*#__PURE__*/_react.default.createElement("h3", null, member.name), /*#__PURE__*/_react.default.createElement("p", null, member.quote), /*#__PURE__*/_react.default.createElement("div", {
-      className: "card-social"
-    }, /*#__PURE__*/_react.default.createElement("svg", {
-      xmlns: "http://www.w3.org/2000/svg",
-      width: "24",
-      height: "20",
-      viewBox: "0 0 24 20"
-    }, /*#__PURE__*/_react.default.createElement("path", {
-      fill: "#FFF",
-      d: "M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
-    })), /*#__PURE__*/_react.default.createElement("svg", {
-      xmlns: "http://www.w3.org/2000/svg",
-      width: "20",
-      height: "20",
-      viewBox: "0 0 20 20"
-    }, /*#__PURE__*/_react.default.createElement("path", {
-      fill: "#FFF",
-      d: "M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"
-    })))), /*#__PURE__*/_react.default.createElement("div", {
-      className: "flip-card",
-      onClick: function onClick() {
-        flipCard(member[index]);
-      }
-    }, /*#__PURE__*/_react.default.createElement("svg", {
-      xmlns: "http://www.w3.org/2000/svg",
-      width: "16",
-      height: "16",
-      viewBox: "0 0 16 16"
-    }, /*#__PURE__*/_react.default.createElement("path", {
-      fill: "#012F34",
-      fillRule: "evenodd",
-      d: "M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"
-    }))));
-  }));
+  return /*#__PURE__*/_react.default.createElement("article", {
+    className: "card ".concat(isFlipped ? "flipped" : "")
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "card-front ".concat(isFlipped ? "front" : "")
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: member.image,
+    alt: "team member's picture"
+  }), /*#__PURE__*/_react.default.createElement("h3", null, member.name), /*#__PURE__*/_react.default.createElement("span", null, member.title), /*#__PURE__*/_react.default.createElement("button", {
+    className: "flip-card flip-card-front",
+    onClick: function onClick() {
+      return setIsFlipped(!isFlipped);
+    }
+  }, /*#__PURE__*/_react.default.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "16",
+    height: "16",
+    viewBox: "0 0 16 16"
+  }, /*#__PURE__*/_react.default.createElement("path", {
+    fill: "#012F34",
+    fillRule: "evenodd",
+    d: "M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"
+  })))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "card-back ".concat(isFlipped ? "back" : "")
+  }, /*#__PURE__*/_react.default.createElement("h3", null, member.name), /*#__PURE__*/_react.default.createElement("p", null, member.quote), /*#__PURE__*/_react.default.createElement("div", {
+    className: "card-social"
+  }, /*#__PURE__*/_react.default.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "24",
+    height: "20",
+    viewBox: "0 0 24 20"
+  }, /*#__PURE__*/_react.default.createElement("path", {
+    fill: "#FFF",
+    d: "M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
+  })), /*#__PURE__*/_react.default.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "20",
+    height: "20",
+    viewBox: "0 0 20 20"
+  }, /*#__PURE__*/_react.default.createElement("path", {
+    fill: "#FFF",
+    d: "M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"
+  }))), /*#__PURE__*/_react.default.createElement("button", {
+    className: "flip-card flip-card-back",
+    onClick: function onClick() {
+      return setIsFlipped(!isFlipped);
+    }
+  }, /*#__PURE__*/_react.default.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "16",
+    height: "16",
+    viewBox: "0 0 16 16"
+  }, /*#__PURE__*/_react.default.createElement("path", {
+    fill: "#012F34",
+    fillRule: "evenodd",
+    d: "M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"
+  })))));
 };
 
 var _default = TeamMembers;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../teamData":"teamData.js"}],"images/logo-gadgets-now.png":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js"}],"images/logo-gadgets-now.png":[function(require,module,exports) {
 module.exports = "/logo-gadgets-now.0c82a92e.png";
 },{}],"images/logo-jakarta-post.png":[function(require,module,exports) {
 module.exports = "/logo-jakarta-post.60fb4cfa.png";
@@ -30269,6 +30272,8 @@ exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 var _Banner = _interopRequireDefault(require("./Banner"));
+
+var _teamData = _interopRequireDefault(require("../teamData"));
 
 var _TeamMembers = _interopRequireDefault(require("./TeamMembers"));
 
@@ -30295,7 +30300,14 @@ var AboutPage = function AboutPage() {
     className: "about-section-2"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "about-section-2-wrapper"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, "Meet the directors"), /*#__PURE__*/_react.default.createElement(_TeamMembers.default, null))), /*#__PURE__*/_react.default.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "Meet the directors"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "team-members"
+  }, _teamData.default.map(function (member, index) {
+    return /*#__PURE__*/_react.default.createElement(_TeamMembers.default, {
+      member: member,
+      key: index
+    });
+  })))), /*#__PURE__*/_react.default.createElement("div", {
     className: "about-section-3"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "about-section-3-wrapper"
@@ -30321,7 +30333,91 @@ var AboutPage = function AboutPage() {
 
 var _default = AboutPage;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./Banner":"components/Banner.js","./TeamMembers":"components/TeamMembers.js","../images/logo-gadgets-now.png":"images/logo-gadgets-now.png","../images/logo-jakarta-post.png":"images/logo-jakarta-post.png","../images/logo-tech-radar.png":"images/logo-tech-radar.png","../images/logo-the-guardian.png":"images/logo-the-guardian.png","../images/logo-the-verge.png":"images/logo-the-verge.png"}],"App.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Banner":"components/Banner.js","../teamData":"teamData.js","./TeamMembers":"components/TeamMembers.js","../images/logo-gadgets-now.png":"images/logo-gadgets-now.png","../images/logo-jakarta-post.png":"images/logo-jakarta-post.png","../images/logo-tech-radar.png":"images/logo-tech-radar.png","../images/logo-the-guardian.png":"images/logo-the-guardian.png","../images/logo-the-verge.png":"images/logo-the-verge.png"}],"components/ContactPage.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _iconPerson = _interopRequireDefault(require("../images/icon-person.svg"));
+
+var _iconCog = _interopRequireDefault(require("../images/icon-cog.svg"));
+
+var _iconChart = _interopRequireDefault(require("../images/icon-chart.svg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ContactPage = function ContactPage() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "contact-page"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "contact-wrapper"
+  }, /*#__PURE__*/_react.default.createElement("section", {
+    className: "contact-text"
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "Contact"), /*#__PURE__*/_react.default.createElement("h3", null, "Ask us about"), /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("img", {
+    src: _iconPerson.default,
+    alt: "person icon"
+  }), /*#__PURE__*/_react.default.createElement("span", null, "The quality of our talent network")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("img", {
+    src: _iconCog.default,
+    alt: "cog icon"
+  }), /*#__PURE__*/_react.default.createElement("span", null, "Usage & implementation of our software")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("img", {
+    src: _iconChart.default,
+    alt: "chart icon"
+  }), /*#__PURE__*/_react.default.createElement("span", null, "How we help drive innovation")))), /*#__PURE__*/_react.default.createElement("section", {
+    className: "contact-form"
+  }, /*#__PURE__*/_react.default.createElement("form", null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "form-element"
+  }, /*#__PURE__*/_react.default.createElement("input", {
+    type: "text",
+    id: "name",
+    placeholder: "Name"
+  }), /*#__PURE__*/_react.default.createElement("label", {
+    htmlFor: "name"
+  }, "Name")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "form-element"
+  }, /*#__PURE__*/_react.default.createElement("input", {
+    type: "email",
+    id: "email",
+    placeholder: "Email"
+  }), /*#__PURE__*/_react.default.createElement("label", {
+    htmlFor: "email"
+  }, "Email")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "form-element"
+  }, /*#__PURE__*/_react.default.createElement("input", {
+    type: "text",
+    id: "company",
+    placeholder: "Company"
+  }), /*#__PURE__*/_react.default.createElement("label", {
+    htmlFor: "company"
+  }, "Company")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "form-element"
+  }, /*#__PURE__*/_react.default.createElement("input", {
+    type: "text",
+    id: "title",
+    placeholder: "Title"
+  }), /*#__PURE__*/_react.default.createElement("label", {
+    htmlFor: "title"
+  }, "Title")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "form-element"
+  }, /*#__PURE__*/_react.default.createElement("textarea", {
+    id: "message",
+    rows: "4",
+    placeholder: "Message"
+  }), /*#__PURE__*/_react.default.createElement("label", {
+    htmlFor: "message"
+  }, "Message")), /*#__PURE__*/_react.default.createElement("button", {
+    type: "submit",
+    className: "btn btn-secondary"
+  }, "submit")))));
+};
+
+var _default = ContactPage;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","../images/icon-person.svg":"images/icon-person.svg","../images/icon-cog.svg":"images/icon-cog.svg","../images/icon-chart.svg":"images/icon-chart.svg"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -30338,16 +30434,18 @@ var _Footer = _interopRequireDefault(require("./components/Footer"));
 
 var _AboutPage = _interopRequireDefault(require("./components/AboutPage"));
 
+var _ContactPage = _interopRequireDefault(require("./components/ContactPage"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App() {
   return /*#__PURE__*/_react.default.createElement("div", {
     id: "container"
-  }, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement(_AboutPage.default, null), /*#__PURE__*/_react.default.createElement(_Footer.default, null));
+  }, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement(_ContactPage.default, null), /*#__PURE__*/_react.default.createElement(_Footer.default, null));
 };
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(App, null), document.getElementById('root'));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./scss/main.scss":"scss/main.scss","./components/HomePage":"components/HomePage.js","./components/Header":"components/Header.js","./components/Footer":"components/Footer.js","./components/AboutPage":"components/AboutPage.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./scss/main.scss":"scss/main.scss","./components/HomePage":"components/HomePage.js","./components/Header":"components/Header.js","./components/Footer":"components/Footer.js","./components/AboutPage":"components/AboutPage.js","./components/ContactPage":"components/ContactPage.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -30375,7 +30473,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53947" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49349" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,3 +1,5 @@
+@use '../variables/' as *;
+
 .about-section-2 {
     padding: 7.3em $padding-mobile 9.8em $padding-mobile;
     background: $deep-jungle-green;
@@ -9,6 +11,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 1440px;
+        margin: 0 auto;
 
         h2 {
             font-size: 2.7em;
@@ -29,13 +33,31 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                flex-grow: 1;
                 width: 100%;
                 max-width: 350px;
+                height: 253px;
                 background: $sacramento-state-green;
-                padding: 2.7em 2em 2.7em 2em;
+                padding: 2.7em 3em 0 3em;
+
+                &.flipped {
+                    background: $dark-green;
+                }
 
                 &:not(:first-child) {
                     margin: 4.7em 0 0 0;
+                }
+
+                .flip-card {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 56px;
+                    height: 56px;
+                    border: none;
+                    outline: none;
+                    border-radius: 50%;
+                    margin: 0 0 -28px 0;
                 }
 
                 .card-front {
@@ -63,22 +85,20 @@
                         font-style: italic;
                         color: $white;
                         letter-spacing: .03rem;
+                        padding: 0 0 1.5em 0;
+                    }
+
+                    .flip-card-front {
+                        background-color: $light-coral;
+
+                        &:hover, &:focus {
+                            background-color: $rapture-blue;
+                        }
                     }
 
                     &.front {
                         display: none;
                     }
-                }
-
-                .flip-card {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 56px;
-                    height: 56px;
-                    border-radius: 50%;
-                    background-color: $light-coral;
-                    margin: 0 0 0 0;
                 }
 
                 .card-back {
@@ -99,16 +119,30 @@
                         font-size: 1.15rem;
                         letter-spacing: .025rem;
                         line-height: 2em;
+                        padding: 1em 0 1.5em 0;
                     }
 
                     .card-social {
                         display: flex;
                         justify-content: center;
+                        padding: 0 0 2.5em 0;
 
                         svg {
                             &:first-child {
                                 margin: 0 1.3em 0 0;
                             }
+                        }
+                    }
+
+                    .flip-card-back {
+                        background: $rapture-blue;
+
+                        &:hover, &:focus {
+                            background: $light-coral;
+                        }
+
+                        svg {
+                            transform: rotate(45deg);
                         }
                     }
 

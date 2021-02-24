@@ -1,3 +1,5 @@
+@use '../variables/' as *;
+
 @media screen and (min-width: 1350px) {
     .home-section-1 {
         height: calc(100vh - 126px);

@@ -1,5 +1,6 @@
 import React from 'react'
 import Banner from './Banner'
+import teamData from '../teamData'
 import TeamMembers from './TeamMembers'
 import logoGadgets from '../images/logo-gadgets-now.png'
 import logoJakarta from '../images/logo-jakarta-post.png'
@@ -8,6 +9,7 @@ import logoGuardian from '../images/logo-the-guardian.png'
 import logoVerge from '../images/logo-the-verge.png'
 
 const AboutPage = () => {
+    
     return (
         <div className="about-page">
             <div className="about-section-1">
@@ -22,7 +24,15 @@ const AboutPage = () => {
             <div className="about-section-2">
                 <div className="about-section-2-wrapper">
                     <h2>Meet the directors</h2>
-                    <TeamMembers />
+                    <div className="team-members">
+                        { teamData.map((member, index) => {
+                            return (
+                                <TeamMembers 
+                            member={ member }
+                            key={ index }/>
+                            )
+                        }) }
+                    </div>
                 </div>
             </div>
             <div className="about-section-3">

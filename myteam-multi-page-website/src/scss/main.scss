@@ -1,27 +1,38 @@
+// ------------------------------------- Partials ----------------------------------------
+
+// Variables
+@use './variables/' as *;
+
+// Shared
+@use './shared/header';
+@use './shared/footer';
+@use './shared/banner';
+@use './shared/buttons';
+
+// Home page
+@use './home-page/home-section-1';
+@use './home-page/home-section-2';
+@use './home-page/home-section-3';
+
+// About page
+@use './about-page/about-section-1';
+@use './about-page/about-section-2';
+@use './about-page/about-section-3';
+
+// Contact
+@use './contact/contact';
+@use './contact/media-768-contact';
+@use './contact/media-1350-contact';
+
+// Media queries
+@use './home-page/media-768-home';
+@use './home-page/media-1350-home';
+@use './shared/media-768-shared';
+@use './shared/media-1350-shared';
+@use './about-page/media-768-about';
+@use './about-page/media-1350-about';
+
 @import url('https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700&display=swap');
-
-// ----------- Variables
-$font-stack: 'Livvic', sans-serif;
-
-// Primary colors
-$midnight-green: #014E56;
-$light-coral: #F67E7E;
-$white: #FFFFFF;
-
-// Secondary colors
-$rapture-blue: #79C8C7;
-$police-blue: #2C6269;
-$deep-jungle-green: #004047;
-$sacramento-state-green: #012F34;
-$dark-green: #002529;
-
-$mobile-wrapper: rgba(0,37,41,0.5);
-$image-border: #C4FFFE;
-
-// Padding left/right for each screen size
-$padding-mobile: 2em;
-$padding-tablet: 8em;
-$padding-desktop: 13.5em;
 
 // --------------------------------- General styles ---------------------------------
 *, *:before, *:after {
@@ -68,27 +79,3 @@ li {
     position: relative; 
     overflow-x: hidden;   
 }
-
-// ------------------------------------- Partials ----------------------------------------
-
-// Shared
-@import 'header';
-@import 'footer';
-@import 'banner';
-@import 'buttons';
-
-// Home page
-@import 'home-section-1';
-@import 'home-section-2';
-@import 'home-section-3';
-
-// About page
-@import 'about-section-1';
-@import 'about-section-2';
-@import 'about-section-3';
-
-// Media queries
-@import 'media-768-home';
-@import 'media-768-shared';
-@import 'media-1350-home';
-@import 'media-1350-shared';

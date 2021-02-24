@@ -1,3 +1,5 @@
+@use '../variables/' as *;
+
 .btn {
     display: flex;
     justify-content: center;
@@ -17,10 +19,12 @@
     }
 }
 
-.btn-primary-dark {
-
-}
-
 .btn-secondary {
+    background: $white;
+    color: $deep-jungle-green;
 
+    &:hover, &:focus {
+        background: $rapture-blue;
+
+    }
 }

@@ -1,3 +1,5 @@
+@use '../variables/' as *;
+
 @media screen and (min-width: 768px) {
      
     .home-section-1 {
@@ -10,10 +12,6 @@
         h1 {
             font-size: 5.3rem;
             line-height: 1em;
-        }
-
-        p {
-            max-width: 460px;
         }
     }
 

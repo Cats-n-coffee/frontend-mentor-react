@@ -1,3 +1,5 @@
+@use '../variables/' as *;
+
 .about-section-1 {
     padding: 9em $padding-mobile;
     background: $midnight-green;

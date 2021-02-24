@@ -1,22 +1,20 @@
 import React, { useState } from 'react'
-import teamData from '../teamData'
 
-const TeamMembers = () => {
+
+const TeamMembers = ({ member}) => {
     const [isFlipped, setIsFlipped] = useState(false);
-
-    const flipCard = () => {
-        setIsFlipped(!isFlipped);
-    }
-
+    
     return (
-        <div className="team-members">
-            { teamData.map((member, index) => {
-                return (
-                    <article className="card" key={ index }>
+                    <article className={`card ${ isFlipped ? "flipped" : "" }`}>
                         <div className={`card-front ${ isFlipped ? "front" : "" }`} >
                             <img src={ member.image } alt="team member's picture"/>
                             <h3>{ member.name }</h3>
                             <span>{ member.title }</span>
+                            <button className="flip-card flip-card-front" onClick={ () => setIsFlipped(!isFlipped) }>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path fill="#012F34" fillRule="evenodd" d="M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"/>
+                                </svg>
+                            </button>
                         </div>
                         <div className={`card-back ${ isFlipped ? "back" : "" }`}>
                             <h3>{ member.name }</h3>
@@ -29,16 +27,13 @@ const TeamMembers = () => {
                                     <path fill="#FFF" d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"/>
                                 </svg>
                             </div>
-                        </div>
-                        <div className="flip-card" onClick={ () => { flipCard(member[index]) } }>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                                <path fill="#012F34" fillRule="evenodd" d="M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"/>
-                            </svg>
-                        </div>
+                            <button className="flip-card flip-card-back" onClick={ () => setIsFlipped(!isFlipped) }>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path fill="#012F34" fillRule="evenodd" d="M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"/>
+                                </svg>
+                            </button>
+                        </div>   
             </article>
-                )
-            }) }  
-        </div>
     )
 }
 

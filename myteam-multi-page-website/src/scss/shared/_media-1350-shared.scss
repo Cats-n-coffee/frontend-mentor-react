@@ -1,3 +1,5 @@
+@use '../variables/' as *;
+
 @media screen and (min-width: 1350px) {
     header {
         padding: 6.5em $padding-desktop 0 $padding-desktop;
