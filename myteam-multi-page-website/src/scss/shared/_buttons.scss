@@ -12,6 +12,7 @@
 .btn-primary-light {
     border: 2px solid $white;
     color: white;
+    transition: background 600ms ease-in-out;
 
     &:hover, &:focus {
         background: $white;
@@ -22,6 +23,7 @@
 .btn-secondary {
     background: $white;
     color: $deep-jungle-green;
+    transition: background 600ms ease-in-out;
 
     &:hover, &:focus {
         background: $rapture-blue;

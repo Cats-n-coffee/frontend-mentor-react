@@ -8,6 +8,7 @@ import aiysha from '../images/avatar-aiysha.jpg'
 import arthur from '../images/avatar-arthur.jpg'
 
 const HomePage = () => {
+
     return (
         <div className="home-page">
             <section className="home-section-1">

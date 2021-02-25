@@ -11,7 +11,7 @@ header {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        max-width: 1440px;
+        max-width: 1110px;
         margin: 0 auto;
         box-sizing: border-box;
 
@@ -46,17 +46,20 @@ header {
         }
     
         .navbar {
-            display: none;
+            display: flex;
             position: absolute;
             top: 0;
             right: 0;
             bottom: 0;
-            width: 260px;
+            width: 0;
             height: 100vh;
             background: $police-blue;
             flex-direction: column;
             padding: 5em 2em 0 4em;
             z-index: 3;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 600ms ease-in-out;
     
             .close-menu {
                 align-self: flex-end;
@@ -81,6 +84,8 @@ header {
     
                     &:last-child {
                         a {
+                            transition: color 600ms ease-in-out;
+
                             &:hover, &:focus {
                                 color: $police-blue;
                             }
@@ -90,6 +95,7 @@ header {
                         font-size: 1.5rem;
                         color: $white;
                         font-weight: 500;
+                        transition: color 600ms ease-in-out;
     
                         &:hover, &:focus {
                             color: $light-coral;
@@ -112,7 +118,10 @@ header {
             }
     
             &.show {
-                display: flex;
+                // display: flex;
+                visibility: visible;
+                opacity: 1;
+                width: 260px;
             }
         }
     }

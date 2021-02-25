@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../images/logo.svg'
 
 const Footer = () => {
@@ -8,8 +9,8 @@ const Footer = () => {
                 <img src={logo} alt=""/>
                 <nav>
                     <ul>
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">about</a></li>
+                        <li><Link to="/">home</Link></li>
+                        <li><Link to="/about">about</Link></li>
                     </ul>
                 </nav>
                 <address>

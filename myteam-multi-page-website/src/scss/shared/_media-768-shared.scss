@@ -17,7 +17,6 @@
         }
     
         .navbar {
-            display: flex;
             position: static;
             width: 100%;
             height: auto;
@@ -25,6 +24,9 @@
             flex-direction: row;
             background: none;
             padding: 0 0 0 4em;
+            visibility: visible;
+            opacity: 1;
+            transition: none;
     
             .close-menu {
                 display: none;

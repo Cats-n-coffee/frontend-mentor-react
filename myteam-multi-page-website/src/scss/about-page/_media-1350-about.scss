@@ -30,7 +30,7 @@
             .team-members {
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: repeat(2, auto);
-                justify-content: center;
+                justify-content: space-between;
 
                 .card {
                     margin: 0 0 6em 0;

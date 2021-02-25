@@ -13,7 +13,7 @@ footer {
         align-items: center;
         justify-items: center;
         width: 100%;
-        max-width: 1440px;
+        max-width: 1110px;
         margin: 0 auto;
 
         img {
@@ -35,6 +35,7 @@ footer {
                         font-size: 1.2rem;
                         font-weight: 600;
                         letter-spacing: .025em;
+                        transition: color 600ms ease-in-out;
     
                         &:hover, &:focus {
                             color: $light-coral;
@@ -67,6 +68,8 @@ footer {
                 }
     
                 path {
+                    transition: fill 600ms ease-in-out;
+                    
                     &:hover, &:focus {
                         fill: $light-coral;
                     }
