@@ -46,10 +46,13 @@
         
                     &:last-child {
                         margin: 0 0 0 auto;
+                        z-index: 1;
         
                         a {
+                            
                             &:hover, &:focus {
                                 color: $midnight-green;
+                                background: $white;
                             }
                         }
                     }

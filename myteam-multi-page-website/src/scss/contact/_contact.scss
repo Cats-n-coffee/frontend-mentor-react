@@ -76,11 +76,13 @@
 
                 .form-element {
                     display: flex;
-                    flex-direction: column-reverse;
+                    flex-direction: column;
 
                     input, textarea {
                         font-family: $font-stack;
                         font-size: 1.25rem;
+                        font-weight: 600;
+                        letter-spacing: .03rem;
                         color: $white;
                         background: $midnight-green;
                         border: none;
@@ -93,11 +95,35 @@
                             opacity: .6;
                             letter-spacing: .025rem;
                         }
+
+                        &:hover, &:focus {
+                            input, textarea {
+                                border-bottom: 1px solid $rapture-blue;
+                            }
+                        }
                     }
 
                     label {
                         visibility: hidden;
-                        padding: 1rem 0 0 0;
+                        padding: .7rem 0 0 0;
+                    }
+
+                    &.error {
+                        input, textarea {
+                            border-bottom: 1px solid $light-coral;
+
+                            &::placeholder {
+                                color: $light-coral;
+                                opacity: .6;
+                            }
+                        }
+
+                        .error-div {
+                            color: $light-coral;
+                            font-size: .9rem;
+                            font-style: italic;
+                            padding: .5rem 0 0 1.1rem;
+                        }
                     }
                 }
 

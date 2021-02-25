@@ -21,8 +21,6 @@
 
 // Contact
 @use './contact/contact';
-@use './contact/media-768-contact';
-@use './contact/media-1350-contact';
 
 // Media queries
 @use './home-page/media-768-home';
@@ -31,6 +29,8 @@
 @use './shared/media-1350-shared';
 @use './about-page/media-768-about';
 @use './about-page/media-1350-about';
+@use './contact/media-768-contact';
+@use './contact/media-1350-contact';
 
 @import url('https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700&display=swap');
 

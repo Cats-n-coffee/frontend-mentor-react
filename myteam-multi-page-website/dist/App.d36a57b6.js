@@ -30333,7 +30333,7 @@ var AboutPage = function AboutPage() {
 
 var _default = AboutPage;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./Banner":"components/Banner.js","../teamData":"teamData.js","./TeamMembers":"components/TeamMembers.js","../images/logo-gadgets-now.png":"images/logo-gadgets-now.png","../images/logo-jakarta-post.png":"images/logo-jakarta-post.png","../images/logo-tech-radar.png":"images/logo-tech-radar.png","../images/logo-the-guardian.png":"images/logo-the-guardian.png","../images/logo-the-verge.png":"images/logo-the-verge.png"}],"components/ContactPage.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Banner":"components/Banner.js","../teamData":"teamData.js","./TeamMembers":"components/TeamMembers.js","../images/logo-gadgets-now.png":"images/logo-gadgets-now.png","../images/logo-jakarta-post.png":"images/logo-jakarta-post.png","../images/logo-tech-radar.png":"images/logo-tech-radar.png","../images/logo-the-guardian.png":"images/logo-the-guardian.png","../images/logo-the-verge.png":"images/logo-the-verge.png"}],"components/ContactForm.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30343,15 +30343,356 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ContactForm = function ContactForm(_ref) {
+  var name = _ref.name,
+      email = _ref.email,
+      company = _ref.company,
+      title = _ref.title,
+      message = _ref.message,
+      nameVal = _ref.nameVal,
+      emailVal = _ref.emailVal,
+      companyVal = _ref.companyVal,
+      titleVal = _ref.titleVal,
+      messageVal = _ref.messageVal,
+      submit = _ref.submit;
+  return /*#__PURE__*/_react.default.createElement("form", {
+    onSubmit: submit
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "form-element ".concat(name.error ? "error" : "")
+  }, /*#__PURE__*/_react.default.createElement("label", {
+    htmlFor: "name"
+  }, "Name"), /*#__PURE__*/_react.default.createElement("input", {
+    type: "text",
+    id: "name",
+    placeholder: "Name",
+    value: name.value || '',
+    onChange: function onChange(e) {
+      return nameVal(e.target.value);
+    }
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "error-div"
+  }, name.error)), /*#__PURE__*/_react.default.createElement("div", {
+    className: "form-element ".concat(email.error ? "error" : "")
+  }, /*#__PURE__*/_react.default.createElement("label", {
+    htmlFor: "email"
+  }, "Email"), /*#__PURE__*/_react.default.createElement("input", {
+    type: "email",
+    id: "email",
+    placeholder: "Email",
+    value: email.value || '',
+    onChange: function onChange(e) {
+      return emailVal(e.target.value);
+    }
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "error-div"
+  }, email.error)), /*#__PURE__*/_react.default.createElement("div", {
+    className: "form-element ".concat(company.error ? "error" : "")
+  }, /*#__PURE__*/_react.default.createElement("label", {
+    htmlFor: "company"
+  }, "Company"), /*#__PURE__*/_react.default.createElement("input", {
+    type: "text",
+    id: "company",
+    placeholder: "Company",
+    value: company.value || '',
+    onChange: function onChange(e) {
+      return companyVal(e.target.value);
+    }
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "error-div"
+  }, company.error)), /*#__PURE__*/_react.default.createElement("div", {
+    className: "form-element ".concat(title.error ? "error" : "")
+  }, /*#__PURE__*/_react.default.createElement("label", {
+    htmlFor: "title"
+  }, "Title"), /*#__PURE__*/_react.default.createElement("input", {
+    type: "text",
+    id: "title",
+    placeholder: "Title",
+    value: title.value || '',
+    onChange: function onChange(e) {
+      return titleVal(e.target.value);
+    }
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "error-div"
+  }, title.error)), /*#__PURE__*/_react.default.createElement("div", {
+    className: "form-element ".concat(message.error ? "error" : "")
+  }, /*#__PURE__*/_react.default.createElement("label", {
+    htmlFor: "message"
+  }, "Message"), /*#__PURE__*/_react.default.createElement("textarea", {
+    id: "message",
+    rows: "4",
+    placeholder: "Message",
+    value: message.value || '',
+    onChange: function onChange(e) {
+      return messageVal(e.target.value);
+    }
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "error-div"
+  }, message.error)), /*#__PURE__*/_react.default.createElement("button", {
+    type: "submit",
+    className: "btn btn-secondary"
+  }, "submit"));
+};
+
+var _default = ContactForm;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"components/ContactPage.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
 var _iconPerson = _interopRequireDefault(require("../images/icon-person.svg"));
 
 var _iconCog = _interopRequireDefault(require("../images/icon-cog.svg"));
 
 var _iconChart = _interopRequireDefault(require("../images/icon-chart.svg"));
 
+var _ContactForm = _interopRequireDefault(require("./ContactForm"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 var ContactPage = function ContactPage() {
+  var _useState = (0, _react.useState)({
+    value: '',
+    error: ''
+  }),
+      _useState2 = _slicedToArray(_useState, 2),
+      name = _useState2[0],
+      setName = _useState2[1];
+
+  var _useState3 = (0, _react.useState)({
+    value: '',
+    error: ''
+  }),
+      _useState4 = _slicedToArray(_useState3, 2),
+      email = _useState4[0],
+      setEmail = _useState4[1];
+
+  var _useState5 = (0, _react.useState)({
+    value: '',
+    error: ''
+  }),
+      _useState6 = _slicedToArray(_useState5, 2),
+      company = _useState6[0],
+      setCompany = _useState6[1];
+
+  var _useState7 = (0, _react.useState)({
+    value: '',
+    error: ''
+  }),
+      _useState8 = _slicedToArray(_useState7, 2),
+      title = _useState8[0],
+      setTitle = _useState8[1];
+
+  var _useState9 = (0, _react.useState)({
+    value: '',
+    error: ''
+  }),
+      _useState10 = _slicedToArray(_useState9, 2),
+      message = _useState10[0],
+      setMessage = _useState10[1];
+
+  var validateName = function validateName(name) {
+    console.log(name);
+
+    if (!name) {
+      console.log('empty');
+      var errorEmpty = 'This field is required';
+      setName({
+        error: errorEmpty
+      });
+      setTimeout(function () {
+        setName({
+          error: ''
+        });
+      }, 3000);
+    }
+
+    if (/^[a-zA-Z\s]+$/.test(name)) {
+      setName({
+        value: name
+      });
+    }
+
+    if (name.length > 0 && !/^[a-zA-Z\s]+$/.test(name)) {
+      var error = 'Name must contain only letters';
+      setName({
+        value: name,
+        error: error
+      });
+      setTimeout(function () {
+        setName({
+          value: name,
+          error: ''
+        });
+      }, 3000);
+    }
+  };
+
+  var validateEmail = function validateEmail(email) {
+    console.log(email);
+
+    if (!email) {
+      var errorEmpty = 'This field is required';
+      setEmail({
+        error: errorEmpty
+      });
+      setTimeout(function () {
+        setEmail({
+          error: ''
+        });
+      }, 3000); //removeError(setEmail)
+    }
+
+    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
+      setEmail({
+        value: email
+      });
+    }
+
+    if (email.length > 0 && !/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
+      var error = 'Email must match this format: myemail@email.com';
+      setEmail({
+        value: email,
+        error: error
+      });
+      setTimeout(function () {
+        setEmail({
+          value: email,
+          error: ''
+        });
+      }, 3000);
+    }
+  };
+
+  var validateCompany = function validateCompany(company) {
+    console.log(company);
+
+    if (company.trim() === '') {
+      var errorEmpty = 'This field is required';
+      setCompany({
+        error: errorEmpty
+      });
+      setTimeout(function () {
+        setCompany({
+          error: ''
+        });
+      }, 3000);
+    } else {
+      setCompany({
+        value: company
+      });
+    }
+  };
+
+  var validateTitle = function validateTitle(title) {
+    console.log(title);
+
+    if (title.trim() === '') {
+      var errorEmpty = 'This field is required';
+      setTitle({
+        error: errorEmpty
+      });
+      setTimeout(function () {
+        setTitle({
+          error: ''
+        });
+      }, 3000);
+    }
+
+    if (title.length > 0 && !/^[a-zA-Z\s]+$/.test(title)) {
+      var error = 'Title must contain only letters';
+      setTitle({
+        value: title,
+        error: error
+      });
+      setTimeout(function () {
+        setTitle({
+          error: ''
+        });
+      }, 3000);
+    }
+
+    if (/^[a-zA-Z\s]+$/.test(title)) {
+      setTitle({
+        value: title
+      });
+    }
+  };
+
+  var validateMessage = function validateMessage(message) {
+    console.log(message);
+
+    if (message.trim() === '') {
+      var errorEmpty = 'This field is required';
+      setMessage({
+        error: errorEmpty
+      }); // setTimeout(() => {
+      //     setMessage({ error: '' })
+      // }, 3000);
+
+      removeError(setMessage);
+    } else {
+      setMessage({
+        value: message
+      });
+    }
+  };
+
+  var handleSubmit = function handleSubmit(e) {
+    e.preventDefault();
+    setName({
+      value: '',
+      error: ''
+    });
+    setEmail({
+      value: '',
+      error: ''
+    });
+    setCompany({
+      value: '',
+      error: ''
+    });
+    setTitle({
+      value: '',
+      error: ''
+    });
+    setMessage({
+      value: '',
+      error: ''
+    });
+  };
+
+  var removeError = function removeError(field) {
+    setTimeout(function () {
+      return field({
+        error: ''
+      });
+    }, 3000);
+  };
+
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "contact-page"
   }, /*#__PURE__*/_react.default.createElement("div", {
@@ -30369,55 +30710,24 @@ var ContactPage = function ContactPage() {
     alt: "chart icon"
   }), /*#__PURE__*/_react.default.createElement("span", null, "How we help drive innovation")))), /*#__PURE__*/_react.default.createElement("section", {
     className: "contact-form"
-  }, /*#__PURE__*/_react.default.createElement("form", null, /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-element"
-  }, /*#__PURE__*/_react.default.createElement("input", {
-    type: "text",
-    id: "name",
-    placeholder: "Name"
-  }), /*#__PURE__*/_react.default.createElement("label", {
-    htmlFor: "name"
-  }, "Name")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-element"
-  }, /*#__PURE__*/_react.default.createElement("input", {
-    type: "email",
-    id: "email",
-    placeholder: "Email"
-  }), /*#__PURE__*/_react.default.createElement("label", {
-    htmlFor: "email"
-  }, "Email")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-element"
-  }, /*#__PURE__*/_react.default.createElement("input", {
-    type: "text",
-    id: "company",
-    placeholder: "Company"
-  }), /*#__PURE__*/_react.default.createElement("label", {
-    htmlFor: "company"
-  }, "Company")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-element"
-  }, /*#__PURE__*/_react.default.createElement("input", {
-    type: "text",
-    id: "title",
-    placeholder: "Title"
-  }), /*#__PURE__*/_react.default.createElement("label", {
-    htmlFor: "title"
-  }, "Title")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-element"
-  }, /*#__PURE__*/_react.default.createElement("textarea", {
-    id: "message",
-    rows: "4",
-    placeholder: "Message"
-  }), /*#__PURE__*/_react.default.createElement("label", {
-    htmlFor: "message"
-  }, "Message")), /*#__PURE__*/_react.default.createElement("button", {
-    type: "submit",
-    className: "btn btn-secondary"
-  }, "submit")))));
+  }, /*#__PURE__*/_react.default.createElement(_ContactForm.default, {
+    name: name,
+    email: email,
+    company: company,
+    title: title,
+    message: message,
+    nameVal: validateName,
+    emailVal: validateEmail,
+    companyVal: validateCompany,
+    titleVal: validateTitle,
+    messageVal: validateMessage,
+    submit: handleSubmit
+  }))));
 };
 
 var _default = ContactPage;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../images/icon-person.svg":"images/icon-person.svg","../images/icon-cog.svg":"images/icon-cog.svg","../images/icon-chart.svg":"images/icon-chart.svg"}],"App.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../images/icon-person.svg":"images/icon-person.svg","../images/icon-cog.svg":"images/icon-cog.svg","../images/icon-chart.svg":"images/icon-chart.svg","./ContactForm":"components/ContactForm.js"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -30473,7 +30783,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49349" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49463" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

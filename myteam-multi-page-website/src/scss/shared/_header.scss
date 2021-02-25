@@ -25,6 +25,7 @@ header {
             width: 20px;
             height: 17px;
             z-index: 2;
+            cursor: pointer;
         }
     
         .mobile-nav-blur {
@@ -59,6 +60,7 @@ header {
     
             .close-menu {
                 align-self: flex-end;
+                cursor: pointer;
             }
     
             ul {
@@ -67,6 +69,7 @@ header {
                 flex-direction: column;
     
                 li {
+                    cursor: pointer;
     
                     &:first-child {
                         margin: 4em 0 0 0;
