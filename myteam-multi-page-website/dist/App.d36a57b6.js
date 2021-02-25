@@ -258,8 +258,8 @@ if ("development" !== "production") {
     var REACT_OFFSCREEN_TYPE = 0xeae2;
     var REACT_LEGACY_HIDDEN_TYPE = 0xeae3;
 
-    if (typeof Symbol === 'function' && Symbol.for) {
-      var symbolFor = Symbol.for;
+    if (typeof Symbol === 'function' && Symbol["for"]) {
+      var symbolFor = Symbol["for"];
       REACT_ELEMENT_TYPE = symbolFor('react.element');
       REACT_PORTAL_TYPE = symbolFor('react.portal');
       exports.Fragment = symbolFor('react.fragment');
@@ -1470,7 +1470,7 @@ if ("development" !== "production") {
         pending._result = thenable;
         thenable.then(function (moduleObject) {
           if (payload._status === Pending) {
-            var defaultExport = moduleObject.default;
+            var defaultExport = moduleObject["default"];
             {
               if (defaultExport === undefined) {
                 error('lazy: Expected the result of a dynamic import() call. ' + 'Instead received: %s\n\nYour code should look like: \n  ' + // Break up imports to avoid accidentally parsing them as dependencies.
@@ -34935,7 +34935,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53102" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54401" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

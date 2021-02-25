@@ -11,18 +11,32 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-modules": "^4.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "scss": "^0.2.4"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.4",
     "parcel-bundler": "^1.12.4",
     "postcss": "^8.2.6",
     "sass": "^1.32.8"
   },
   "peerDependencies": {
-   "postcss": "^8.0.0"
-  }
+    "postcss": "^8.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "ie >= 8",
+    "edge >= 15",
+    "ie_mob >= 10",
+    "ff >= 45",
+    "chrome >= 45",
+    "safari >= 7",
+    "opera >= 23",
+    "ios >= 7",
+    "android >= 4",
+    "bb >= 10"
+  ]
 }
