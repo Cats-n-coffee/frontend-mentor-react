@@ -31,6 +31,7 @@
     margin: 0 auto -4em auto;
     box-shadow: 3px 3px 30px rgba(91, 164, 164, 0.4);
     z-index: 2;
+    animation: 1s ease-out forwards slideFromRight;
 }
 
 .all-filters {
@@ -46,6 +47,8 @@
     padding: 0 0 1em 1em;
     font-size: .9em;
     cursor: pointer;
+    -webkit-transition: color 500ms ease-in-out;
+            transition: color 500ms ease-in-out;
 }
 
 .clear-filters:hover, .clear-filters:focus {
@@ -90,8 +93,19 @@
     border-bottom-right-radius: 5px;
     background-color: var(--dark-cyan);
     cursor: pointer;
+    -webkit-transition: all 500ms ease-in-out;
+            transition: all 500ms ease-in-out;
 }
 
 .filter-remove:hover, .filter-remove:focus {
     background-color: var(--very-dark-grayhish-cyan);
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }

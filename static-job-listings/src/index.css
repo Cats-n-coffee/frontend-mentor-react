@@ -230,6 +230,8 @@ html, body {
     padding: .6em;
     margin: 0 1em 1em 0;
     cursor: pointer;
+    -webkit-transition: all 500ms ease-in-out;
+            transition: all 500ms ease-in-out;
 }
 
 .button-filter:hover {
